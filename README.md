@@ -37,20 +37,19 @@ Joakinator is an interaface devoted to convert the languaje and signs of the hum
 
 Protocolo de conexión Joakinator
 
-1. Abrir el hostspot del teléfono
-2. Conectar las computadoras al hostspot y revisar su dirección IP
+1. Encender el módem
+2. Conectar las computadoras al modem y revisar su dirección IP
 3. Configurar el archivo secrets.h y la parte de las direcciones IP en el programa de Arduino
 4. Cargar las modificaciones al Arduino del Joakinator
 5. Desconectar el cable USB y colocar las baterías. Esperar a que el led amarillo se encienda, eso significa que se ha conectado a la WLAN
-6. Abrir el programa de Processing y ejecutarlo
-   a. Barras blancas son las señales del Joakinator
-   b. Las barras naranjas son las señales del Wekinator
+6. Abrir el programa de MAX/MSP
+   a. Barras de la izquierda son los datos del Joakinator
+   b. Las barras de la derecha son las señales del Wekinator
 7. Ver que las barras blancas vibren, si no es así resetear el Joakinator
 8. Abrir Wekinator Input_helper
    a. Comprobar los puertos
 9. Abrir Wekinator
    a. Comprobar los puertos
-10. Abrir MAX/MSP
 
 Protocolo de montaje del Joakinator en cuerpo
 
@@ -66,29 +65,8 @@ Protocolo de montaje del Joakinator en cuerpo
 7. Calibrar la sensibilidad de los flexiforce con los knobs
    Nota. Los Jack del lado grande del Joakinator son para los electrodos y los que están con lo knobs son para los flexiforce
 
-## Performance using Joakinator
+## Performance during the residency
 
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=s2cA5sRCxRI">
-   <img src="https://img.youtube.com/vi/s2cA5sRCxRI/0.jpg" alt="IMAGE ALT TEXT">
-  </a>
-</div>
-
-> El equilibrio reside en 3 puntos
-> Festival Ctrl Art Supr, Madrid, Marzo, 2019
-
-- [Link](https://arterobotico.com/el-equilibrio-reside-en-3-puntos/)
-
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=6gCIS4RPDEY">
-   <img src="https://img.youtube.com/vi/6gCIS4RPDEY/0.jpg" alt="IMAGE ALT TEXT">
-  </a>
-</div>
-
-> Interfaz Cyborg para reflexionar la tecnología
-> Encuentro Si fuese Tú, Facultad de Bellas Artes de Cuenca, UCLM, Abril, 2019
-
-- [Link](https://arterobotico.com/interfaz-ciborg-para-reflexionar-la-tecnologia/)
 
 ## Agradecimientos
 
