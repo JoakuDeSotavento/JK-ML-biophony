@@ -2,7 +2,7 @@
 	"name" : "embodyment_Workshop",
 	"version" : 1,
 	"creationdate" : 3754031950,
-	"modificationdate" : 3769087858,
+	"modificationdate" : 3799048141,
 	"viewrect" : [ 49.0, 144.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -55,6 +55,11 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"Joakinator-Biophinic-Alex.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -64,7 +69,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -74,7 +79,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -84,7 +89,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -94,7 +99,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -104,7 +109,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -114,7 +119,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -124,7 +129,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -134,7 +139,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -144,7 +149,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -154,7 +159,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/img-mov/git/i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media",
-					"projectrelativepath" : "../pabloVoz/pablo_voz/media"
+					"projectrelativepath" : "../../../../i_mBODY-Sonification/embodyment-Workshops/Max/pabloVoz/pablo_voz/media"
 				}
 
 			}
@@ -440,5 +445,6 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 0
+	"viewmode" : 0,
+	"includepackages" : 0
 }
