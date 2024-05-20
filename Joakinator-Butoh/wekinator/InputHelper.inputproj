@@ -33,28 +33,34 @@
         <op class="wekiinputhelper.Modifiers.AverageWindowOperation"/>
       </wekiinputhelper.Modifiers.WindowedOperation>
       <wekiinputhelper.Modifiers.WindowedOperation>
-        <name>emg_3_Avg1</name>
-        <index>2</index>
+        <name>emg_1_Avg1(2)</name>
+        <index>0</index>
         <windowSize>1</windowSize>
         <op class="wekiinputhelper.Modifiers.AverageWindowOperation"/>
       </wekiinputhelper.Modifiers.WindowedOperation>
-      <wekiinputhelper.Modifiers.SecondOrderDifference>
-        <name>emg_1_2ndOrderDiff</name>
-        <index>0</index>
-      </wekiinputhelper.Modifiers.SecondOrderDifference>
-      <wekiinputhelper.Modifiers.SecondOrderDifference>
-        <name>emg_2_2ndOrderDiff</name>
-        <index>1</index>
-      </wekiinputhelper.Modifiers.SecondOrderDifference>
-      <wekiinputhelper.Modifiers.SecondOrderDifference>
-        <name>emg_3_2ndOrderDiff</name>
-        <index>2</index>
-      </wekiinputhelper.Modifiers.SecondOrderDifference>
       <wekiinputhelper.Modifiers.WindowedOperation>
-        <name>emg_1_StdDev100</name>
+        <name>emg_3_StdDev100</name>
+        <index>2</index>
+        <windowSize>100</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>emg_1_StdDev100(2)</name>
         <index>0</index>
         <windowSize>100</windowSize>
         <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>emg_2_StdDev100</name>
+        <index>1</index>
+        <windowSize>100</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>emg_1_Max2ndDiff100</name>
+        <index>0</index>
+        <windowSize>100</windowSize>
+        <op class="wekiinputhelper.Modifiers.Max2ndWindowOperation"/>
       </wekiinputhelper.Modifiers.WindowedOperation>
     </outputs>
     <numOutputTypes>7</numOutputTypes>
