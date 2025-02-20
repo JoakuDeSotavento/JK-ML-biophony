@@ -43,7 +43,7 @@
 #include <OSCMessage.h>
 #include <WiFiNINA.h>
 #include <WiFiUdp.h>
-#include <CircularBuffer.h>
+#include <CircularBuffer.hpp>
 
 #include <OSCBundle.h>
 
@@ -73,7 +73,7 @@ WiFiUDP Udp;
 IPAddress ip(192, 168, 1, 11);
 //destination IP
 IPAddress outIp(192, 168, 1, 100);
-const unsigned int outPort = 12000;
+const unsigned int outPort = 13000;
 //const unsigned int outPort2 = 13000;
 const unsigned int inPort = 8888;
 
@@ -85,15 +85,6 @@ const unsigned int inPort = 8888;
 /////////////*CALIBRATION ROUTINE VARIABLES*/////////////////
 
 // variables:
-
-//const int sensorPin = A0;    // pin that the sensor is attached to
-
-int senVal[] = {0, 0, 0, 0, 0, 0, 0, 0};
-int senMin[] = {1023, 1023, 1023, 1023, 1023, 1023, 1023};
-int senMax[] = {0, 0, 0, 0, 0, 0, 0};
-
-const int senPin[] = {A0, A1, A2, A3, A4, A5, A6};
-
 
 void setup() {
 
@@ -147,11 +138,6 @@ void setup() {
 
 
 void loop() {
-
-  for (int j = 0; j < 6; j++) {
-    senVal[j] = analogRead(senPin[j]);
-    senVal[j] = map(senVal[j], senMin[j], senMax[j], 0, 1023);
-  }
 
   int sensorValue = analogRead(A0);
   int sensorValue1 = analogRead(A1);
@@ -223,29 +209,7 @@ void loop() {
   //  Udp.endPacket(); // mark the end of the OSC Packet
   //  msg.empty(); // free space occupied by message
 
-  //* For the arduino to initiate the calibration process*//
-  //aquí estoy tratabdo de meter la calibracion via processing
-  OSCMessage msg("/calib/");
-  int size;
-
-  if ( (size = Udp.parsePacket()) > 0)
-  {
-    Serial.println("llego un mesaje de processing");
-    while (size--) {
-      msg.fill(Udp.read());
-      Serial.println("llenando la variable");
-      if (msg.isInt(1)) {
-        //get that integer
-        int data = msg.getInt(1);
-        Serial.println(data);
-      }
-    }
-    //if (!bundleIN.hasError())
-    //  bundleIN.route("/calib", 0);
-  }
-  delay(20);
 }
-
 void printWifiData() {
   // print your board's IP address:
   IPAddress ip = WiFi.localIP();
@@ -294,26 +258,4 @@ void printMacAddress(byte mac[]) {
     }
   }
   Serial.println();
-}
-
-void calibRoutine() {
-
-  digitalWrite(LED_BUILTIN, LOW);
-  // calibrate during the first five seconds
-  while (millis() < 5000) {
-
-    for (int i = 0; i < 6; i++) {
-      senVal[i] = analogRead(senPin[i]);
-      if (senVal[i] > senMax[i]) {
-        senMax[i] = senVal[i];
-      }
-      if (senVal[i] > senMin[i]) {
-        senMin[i] = senVal[i];
-      }
-    }
-  }
-  // signal the end of the calibration period
-  digitalWrite(LED_BUILTIN, HIGH);
-
-  Serial.println("Calibration Donde, lets make some noise");
 }

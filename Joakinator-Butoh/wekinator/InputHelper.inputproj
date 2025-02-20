@@ -33,19 +33,13 @@
         <op class="wekiinputhelper.Modifiers.AverageWindowOperation"/>
       </wekiinputhelper.Modifiers.WindowedOperation>
       <wekiinputhelper.Modifiers.WindowedOperation>
-        <name>emg_1_Avg1(2)</name>
-        <index>0</index>
+        <name>emg_3_Avg1(2)</name>
+        <index>2</index>
         <windowSize>1</windowSize>
         <op class="wekiinputhelper.Modifiers.AverageWindowOperation"/>
       </wekiinputhelper.Modifiers.WindowedOperation>
       <wekiinputhelper.Modifiers.WindowedOperation>
-        <name>emg_3_StdDev100</name>
-        <index>2</index>
-        <windowSize>100</windowSize>
-        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
-      </wekiinputhelper.Modifiers.WindowedOperation>
-      <wekiinputhelper.Modifiers.WindowedOperation>
-        <name>emg_1_StdDev100(2)</name>
+        <name>emg_1_StdDev100</name>
         <index>0</index>
         <windowSize>100</windowSize>
         <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
@@ -53,6 +47,12 @@
       <wekiinputhelper.Modifiers.WindowedOperation>
         <name>emg_2_StdDev100</name>
         <index>1</index>
+        <windowSize>100</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>emg_3_StdDev100</name>
+        <index>2</index>
         <windowSize>100</windowSize>
         <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
       </wekiinputhelper.Modifiers.WindowedOperation>
